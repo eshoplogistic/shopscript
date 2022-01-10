@@ -1,0 +1,14 @@
+{$token = ifset($settings, 'token', '')}
+<div class="field-group">
+    <div class="field">
+        <div class="name"></div>
+        <div class="value"><h3>{$obj->_w('Basic settings')}</h3></div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('API KEY')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[api_key]" value="{ifset($settings, 'api_key', '')}">
+            <br>
+        </div>
+    </div>
+</div>

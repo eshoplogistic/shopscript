@@ -1,0 +1,46 @@
+<div class="field-group">
+    <div class="field">
+        <div class="name"></div>
+        <div class="value"><h3>{$obj->_w('Others settings')}</h3></div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('PICKUP NAME')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[pickup_name]" value="{ifset($settings, 'pickup_name', '')}">
+            <br>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('DELIVERY NAME')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[delivery_name]" value="{ifset($settings, 'delivery_name', '')}">
+            <br>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('POST NAME')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[post_name]" value="{ifset($settings, 'post_name', '')}">
+            <br>
+        </div>
+    </div>
+
+    <div class="field">
+            <hr>
+            {if !empty($payment_type)}
+            {$payment_types = ifset($settings, 'payment_type', [])}
+            {foreach $payment_type as $type}
+            <div class="name">{$type['title']}</div>
+            {foreach $payment_esl as $key=>$value}
+                <div class="value">
+                <input type="radio" name="{$namespace}[payment_type][{$type['title']}]" value="{$key|escape}"
+                       {if isset($payment_types[$type['title']]) && $payment_types[$type['title']] == $value}checked{/if}> {$obj->_w($value)}
+                </div>
+            {/foreach}
+            <hr>
+            {/foreach}
+            {/if}
+    </div>
+
+
+</div>

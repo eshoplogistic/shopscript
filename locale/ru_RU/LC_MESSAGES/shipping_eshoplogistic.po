@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wa-plugins/shipping/eshoplogistic\n"
+"POT-Creation-Date: 2019-08-26 09:21+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: wa-plugins/shipping/eshoplogistic\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+msgid "API KEY"
+msgstr "API Ключ"
+
+msgid "WIDGET KEY"
+msgstr "Ключ виджета"
+
+msgid "WIDGET SECRET CODE"
+msgstr "Секретный код виджета"
+
+msgid "Basic settings"
+msgstr "Основные настройки"
+
+msgid "Widget settings"
+msgstr "Настройки виджета"
+
+msgid "PICKUP NAME"
+msgstr "Название для самовывоза"
+
+msgid "DELIVERY NAME"
+msgstr "Название для доставки"
+
+msgid "POST NAME"
+msgstr "Название для почты"
+
+msgid "Others settings"
+msgstr "Доп. настройки"
+
+msgid "cash"
+msgstr "Наличные"
+
+msgid "card"
+msgstr "Карта"
+
+msgid "cashless"
+msgstr "Безналичный"
+
+msgid "prepay"
+msgstr "Предоплата"

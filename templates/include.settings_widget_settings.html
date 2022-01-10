@@ -1,0 +1,20 @@
+<div class="field-group">
+    <div class="field">
+        <div class="name"></div>
+        <div class="value"><h3>{$obj->_w('Widget settings')}</h3></div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('WIDGET KEY')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[widget_key]" value="{ifset($settings, 'widget_key', '')}">
+            <br>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">{$obj->_w('WIDGET SECRET CODE')}</div>
+        <div class="value">
+            <input type="text" name="{$namespace}[widget_secret_code]" value="{ifset($settings, 'widget_secret_code', '')}">
+            <br>
+        </div>
+    </div>
+</div>
